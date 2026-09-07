@@ -1,0 +1,89 @@
+# Environment and local configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Secrets and private keys
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+secrets/
+.local-secrets/
+
+# Never commit real PHI, PII or customer data
+private-data/
+test-data/private/
+imports/private/
+exports/private/
+
+# Node.js / TypeScript
+node_modules/
+.pnpm-store/
+.npm/
+.yarn/cache/
+.yarn/unplugged/
+*.tsbuildinfo
+
+# Frontend and framework builds
+.next/
+.nuxt/
+.svelte-kit/
+dist/
+build/
+out/
+coverage/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
+
+# Docker and local runtime state
+.local/
+docker-data/
+volumes/
+tmp/
+temp/
+logs/
+*.log
+
+# Generated local artifacts
+artifacts/local/
+reports/local/
+generated/preview/
+.cache/
+
+# IDE
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.code-workspace
+
+# Operating systems
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Backup and temporary files
+*.bak
+*.backup
+*.swp
+*.swo
+*~
